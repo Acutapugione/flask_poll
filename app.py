@@ -12,9 +12,7 @@ async def index():
 
 @app.get("/poll")
 async def poll():
-    return await render_template(
-        "index.html"
-    )  # , endpoints=await site_map() # USE JS INSTEAD
+    return await render_template("index.html")
 
 
 def has_no_empty_params(rule):

@@ -11,7 +11,7 @@
                     <a class="navbar-brand" href="{{ link }}">{{ name }}</a>
                 {% endif %}
             {% endfor %}
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-4 mb-lg-0">
                 {% for link, name in endpoints %}
                     {% if request.endpoint == name %}
                         <li class="nav-item">

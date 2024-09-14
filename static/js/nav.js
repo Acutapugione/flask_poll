@@ -1,7 +1,12 @@
 async function fetch_site_map(site_map_url){
-    const response = await fetch(site_map_url)
-    const data = await response.json();
-    return data;
+    try {
+        const response = await fetch(site_map_url)
+        const data = await response.json()
+        return data
+        
+    } catch (error) {
+        alert(error, response)
+    }
 }
 
 
